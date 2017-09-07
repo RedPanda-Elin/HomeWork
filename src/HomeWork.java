@@ -8,11 +8,21 @@ public class HomeWork {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Пожалуйста введите подряд 4 числа");
-        int one = scanner.nextInt();
-        int two = scanner.nextInt();
-        int three = scanner.nextInt();
-        int four = scanner.nextInt();
-        System.out.println(x(one, two,three,four));
+
+        do {
+
+            if (scanner.hasNextInt()) {
+                int one = scanner.nextInt();
+                int two = scanner.nextInt();// багает если начать писать цифры, а продолжить буквами (
+                int three = scanner.nextInt();
+                int four = scanner.nextInt();
+                System.out.println(x(one, two,three,four));
+                break;
+            } else {
+                System.out.println("Нужно ввести менно число");
+                scanner.nextLine();
+            }
+        } while (true);
 
     }
 
