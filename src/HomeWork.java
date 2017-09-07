@@ -5,26 +5,26 @@ import java.util.Scanner;
  */
 public class HomeWork {
     public static void main(String[] args) {
-        x();
-        int result;
-        result = a * (b + (c / d));
-        System.out.println(result);
-    }
-
-    public static int x(int a, int b, int c, int d) {
 
         Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 4; i++) {
-            switch (i) {
-                case '0':
-                    a = scanner.nextInt();
-                case '1':
-                    b = scanner.nextInt();
-                case '2':
-                    c = scanner.nextInt();
-                case '3':
-                    d = scanner.nextInt();
+        System.out.println("Пожалуйста введите подряд 4 числа");
+        int one = scanner.nextInt();
+        int two = scanner.nextInt();
+        int three = scanner.nextInt();
+        int four = scanner.nextInt();
+        System.out.println(x(one, two,three,four));
+
+    }
+
+    public static int x (int a, int b, int c, int d) {
+        int result = a * (b + (c / d));
+        return result;
+
             }
         }
-    }
-}
+
+
+
+
+
+
