@@ -10,14 +10,11 @@ public class FiveHomeWork {
         do {
             if (scanner.hasNextInt()) {
                 int a = scanner.nextInt();
-//                boolean x = check(a);
-
-                if (check(a) = false) {
+                if ( check(a) == false) {
                     System.out.println("Ввведеное вами число было отрицательным");
                 } else {
                     System.out.println("Введенное число было положительным");
                 }
-
                 System.out.println(check(a));
 
                 break;
@@ -30,14 +27,10 @@ public class FiveHomeWork {
     }
 
     public static boolean check (int number) {
-        boolean result;
         if (number < 0) {
-            result = false;
-
-
-            return result;
+            return false;
         } else {
-            return result = true;
+            return true;
         }
     }
 }
